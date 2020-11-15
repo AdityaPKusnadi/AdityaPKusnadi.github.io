@@ -1,3 +1,5 @@
-aditya
-prasetya
-kusnadi
+*buat domain berapa?[ 1,2] :
+1
+*link domain 2 [jika ini buat domain 1];
+/1/update.html
+*
