@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <div class="test"></div>
+</body>
+<script src="assets/js/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        // jQuery.get('test.txt', function(data) {
+        // // var test = data.split(',').length;
+        // // alert(test);
+        // //process text file line by line
+        // $('.test').html(data.replace(',',''));
+        // });
+
+        jQuery.get('test.txt', function (data) {
+
+        var lines = data.split("\n");
+
+        $.each(lines, function (n, elem) {
+            $('.test').append('<div>' + elem + '</div>');
+
+        });
+        console.log(lines[0]);    
+        });
+    });
+</script>
+</html>
